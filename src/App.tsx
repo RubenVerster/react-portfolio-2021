@@ -1,10 +1,5 @@
-import './css/main.css';
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello There</h1>
-    </div>
-  );
-}
+const App = () => {
+  return <h1 className="text-blue-700">Hello There</h1>;
+};
 
 export default App;
