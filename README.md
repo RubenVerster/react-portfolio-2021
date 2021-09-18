@@ -1,8 +1,3 @@
-Clone the repo with 'git clone REPO_HTTP_URL'
+This is my portfolio site
 
-Install all the package dependencies with 'npm i'
-
-Once dependencies have been installed, you can start the app by running 'npm run start', this starts the application on your local server
-
-If you're working on production, have the SCSS compiler running by using 'npm run compile-sass'
-This compiles the SCSS you write into CSS
+You need to add your Firebase Config file in the src/config directory
