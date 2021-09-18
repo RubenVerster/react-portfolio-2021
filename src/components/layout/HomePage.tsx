@@ -4,12 +4,11 @@ import { useEffect } from 'react';
 const HomePage = () => {
   const renderWarpBackground = () => {
     const warpSpeedController = getWarpSpeedController();
-    const someContainer = document.querySelector('#warpContainer');
-    //@ts-ignore
-    warpSpeedController.mountCanvasTo(someContainer);
+    const someContainer = document.getElementById('warpContainer');
+    warpSpeedController.mountCanvasTo(someContainer!!);
     warpSpeedController.render();
 
-    warpSpeedController.setNumberOfStars(50);
+    warpSpeedController.setNumberOfStars(20);
     warpSpeedController.setStarColor('rgba(103, 162, 239, 0.7)');
     warpSpeedController.setStarRadii(0.5);
     warpSpeedController.setStarVelocities(5);
