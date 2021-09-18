@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  &__content {
+    &__social {
+      &-icon {
+        &:link,
+        &:visited {
+          margin: 0 1.5rem;
+          color: $color-white;
+          transition: all 0.3s ease;
+          font-size: 3rem;
+          text-decoration: none;
+        }
+
+        &:hover,
+        &:active {
+          color: $color-primary;
+        }
+      }
+    }
+    &__copyright {
+      color: $color-white;
+      font-size: 2rem;
+    }
+  }
+}

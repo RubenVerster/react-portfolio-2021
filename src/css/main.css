@@ -26,14 +26,21 @@ html {
 body {
   box-sizing: border-box; }
 
-.app {
+a {
+  text-decoration: none; }
+
+.home {
   position: relative; }
-  .app__container {
+  .home__warp-container {
+    z-index: -1;
     height: 100vh;
     width: 100vw;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0; }
+  .home__content {
+    z-index: 3;
+    color: white; }
 
 .navigation__checkbox {
   display: none; }
@@ -162,3 +169,17 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.footer {
+  width: 100%; }
+  .footer__content__social-icon:link, .footer__content__social-icon:visited {
+    margin: 0 1.5rem;
+    color: #fff;
+    transition: all 0.3s ease;
+    font-size: 3rem;
+    text-decoration: none; }
+  .footer__content__social-icon:hover, .footer__content__social-icon:active {
+    color: #67a2ef; }
+  .footer__content__copyright {
+    color: #fff;
+    font-size: 2rem; }

@@ -8,9 +8,9 @@ const HomePage = () => {
     warpSpeedController.mountCanvasTo(someContainer!!);
     warpSpeedController.render();
 
-    warpSpeedController.setNumberOfStars(20);
+    warpSpeedController.setNumberOfStars(10);
     warpSpeedController.setStarColor('rgba(103, 162, 239, 0.7)');
-    warpSpeedController.setStarRadii(0.5);
+    warpSpeedController.setStarRadii(0.7);
     warpSpeedController.setStarVelocities(5);
   };
 
@@ -18,7 +18,16 @@ const HomePage = () => {
     renderWarpBackground();
   }, []);
 
-  return <div className="app-container" id="warpContainer"></div>;
+  return (
+    <section className="home">
+      <div className="home__warp-container" id="warpContainer"></div>
+      <div className="home__content">
+        <div className="box" style={{ height: '300vh' }}>
+          Hello
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default HomePage;
