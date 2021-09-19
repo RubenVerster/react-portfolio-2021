@@ -2,7 +2,7 @@ const HomePage = () => {
   return (
     <header className="header">
       <div className="header__content w-full">
-        <h2 className="greeting">Hello There</h2>
+        <h2 className="greeting heading-primary">Hello There</h2>
         <div className="messages flex justify-between flex-col mx-auto">
           <div className="messages__single">
             <p className="messages-single-text">My name is Ruben Verster</p>
