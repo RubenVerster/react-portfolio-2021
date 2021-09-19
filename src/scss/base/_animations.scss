@@ -54,16 +54,16 @@
 @keyframes moveInLeft-message {
   0% {
     opacity: 0;
-    transform: translateX(-100px) skewX(21deg);
+    transform: translateX(-100px) skewX(14deg);
   }
 
   80% {
-    transform: translateX(10px) skewX(21deg);
+    transform: translateX(10px) skewX(14deg);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0) skewX(21deg);
+    transform: translateX(0) skewX(14deg);
     animation-fill-mode: forwards, backwards;
   }
 }

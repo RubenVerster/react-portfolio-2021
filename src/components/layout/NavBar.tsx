@@ -34,9 +34,9 @@ const NavBar = () => {
               <Link
                 onClick={() => handleLinkClick()}
                 className="navigation__link"
-                to="/test"
+                to="/certification"
               >
-                Test
+                Certificates
               </Link>
             </li>
             <li className="navigation__item">

@@ -12,9 +12,11 @@
 @import './base/typography';
 @import './base/utilities';
 
-@import './layout/home';
-
-@import './components/navigation';
 @import './components/footer';
+@import './components/navigation';
 @import './components/warp';
-@import './components/certification';
+
+@import './layout/info-card';
+
+@import './pages/certification';
+@import './pages/home';

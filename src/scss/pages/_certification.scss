@@ -1,0 +1,58 @@
+.certification {
+  min-height: 95vh;
+  &__content {
+    &-certificates {
+      .certificate {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary,
+          $color-primary-light
+        );
+        max-width: 777px;
+        color: $color-black;
+        transition: all 0.2s ease-in-out;
+
+        &__img {
+          width: 100%;
+        }
+
+        &__content {
+          max-height: 80%;
+          background-image: linear-gradient(
+            to right bottom,
+            $color-white,
+            $color-grey-dark-3
+          );
+          &-title {
+            line-height: 1;
+            font-size: 2rem;
+            margin-bottom: 0.3rem;
+            color: $color-primary;
+            font-weight: 300;
+          }
+
+          &-subtitle {
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: $color-grey-dark-2;
+            margin: 0.5rem 0;
+          }
+
+          &-body {
+            margin: 1rem 0;
+            border-left: 2px solid $color-primary;
+            padding-left: 0.5rem;
+          }
+          &-link {
+            color: $color-primary-dark;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-7px) scale(1.025);
+          box-shadow: 0 0.5rem 1rem rgba($color: $color-primary, $alpha: 1);
+        }
+      }
+    }
+  }
+}
