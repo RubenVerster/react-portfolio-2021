@@ -11,7 +11,7 @@ const App = () => {
     <BrowserRouter>
       <div className="app">
         <NavBar />
-        <Warp />
+        {/* <Warp /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
           <Route path="/test" component={Test} />
