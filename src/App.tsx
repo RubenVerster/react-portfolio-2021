@@ -1,5 +1,6 @@
 import HomePage from './components/layout/HomePage';
 import NavBar from './components/layout/NavBar';
+import Certificates from './components/layout/Certificates';
 import Warp from './components/layout/Warp';
 import Footer from './components/layout/Footer';
 import Test from './components/layout/Test';
@@ -14,7 +15,7 @@ const App = () => {
         {/* <Warp /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/test" component={Test} />
+          <Route path="/certification" component={Certificates} />
         </Switch>
         <Footer />
       </div>
