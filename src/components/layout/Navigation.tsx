@@ -53,9 +53,9 @@ const Navigation = () => {
               <Link
                 onClick={() => handleLinkClick()}
                 className="navigation__link"
-                to="/"
+                to="/blogs"
               >
-                Home
+                Blog Posts
               </Link>
             </li>
             <li className="navigation__item">

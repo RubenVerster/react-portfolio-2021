@@ -2,8 +2,8 @@ import { FaGithubAlt, FaYoutube } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="footer bg-gray-700 text-center">
-      <div className="footer__content flex p-6 mx-auto container flex-col md:flex-row justify-between items-center">
+    <footer className="footer bottom-0 fixed bg-gray-700 text-center">
+      <div className="footer__content flex md:p-6 p-3 mx-auto container flex-row justify-between items-center">
         <div className="footer__content__social flex items-center justify-between">
           <a
             target="_blank"
