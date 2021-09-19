@@ -75,7 +75,7 @@ const Posts = () => {
             ☜(ﾟヮﾟ☜)
           </p>
         </div>
-        <div className="blogposts__content-blogs mx-auto p-12 flex flex-col items-center">
+        <div className="blogposts__content-blogs mx-auto mb-12 p-12 flex flex-col items-center">
           {renderBlogPosts()}
         </div>
       </div>

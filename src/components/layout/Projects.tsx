@@ -121,7 +121,7 @@ const Projects = () => {
             to see all the projects I have worked on
           </p>
         </div>
-        <div className="projects__content-projects mx-auto p-12 flex justify-evenly items-center flex-wrap">
+        <div className="projects__content-projects mx-auto mb-12 p-12 flex justify-evenly items-center flex-wrap">
           {renderProjects()}
         </div>
       </div>
