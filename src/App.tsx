@@ -1,5 +1,5 @@
 import HomePage from './components/layout/HomePage';
-import NavBar from './components/layout/NavBar';
+import Navigation from './components/layout/Navigation';
 import Certificates from './components/layout/Certificates';
 import Projects from './components/layout/Projects';
 import Warp from './components/layout/Warp';
@@ -11,7 +11,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="app">
-        <NavBar />
+        <Navigation />
         {/* <Warp /> */}
         <Switch>
           <Route exact path="/" component={HomePage} />

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 
-const NavBar = () => {
+const Navigation = () => {
   const handleLinkClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     const checkbox = document.getElementById('navi-toggle');
     checkbox?.click();
   };
@@ -43,9 +44,9 @@ const NavBar = () => {
               <Link
                 onClick={() => handleLinkClick()}
                 className="navigation__link"
-                to="/"
+                to="/projects"
               >
-                Home
+                Projects
               </Link>
             </li>
             <li className="navigation__item">
@@ -73,4 +74,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navigation;

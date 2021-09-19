@@ -8,7 +8,7 @@ const Warp = () => {
     warpSpeedController.mountCanvasTo(someContainer!!);
     warpSpeedController.render();
 
-    warpSpeedController.setNumberOfStars(10);
+    warpSpeedController.setNumberOfStars(420);
     warpSpeedController.setStarColor('rgba(103, 162, 239, 0.7)');
     warpSpeedController.setStarRadii(0.7);
     warpSpeedController.setStarVelocities(5);
