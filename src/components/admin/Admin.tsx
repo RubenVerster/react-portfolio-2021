@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
 const Admin = () => {
-  const [userLoggedIn, setUserLoggedIn] = useState<boolean>(false);
+  const [userLoggedIn, setUserLoggedIn] = useState<boolean>(true);
   const checkIfUserLoggedIn = () => {
     const auth = getAuth();
     onAuthStateChanged(auth, (user) => {
@@ -15,12 +15,12 @@ const Admin = () => {
       }
     });
   };
-  useEffect(() => {
-    checkIfUserLoggedIn();
-  }, []);
+  // useEffect(() => {
+  //   checkIfUserLoggedIn();
+  // }, []);
 
   return (
-    <div className="">
+    <div>
       {userLoggedIn ? (
         <Dashboard setUserLoggedIn={setUserLoggedIn} />
       ) : (

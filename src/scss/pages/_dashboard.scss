@@ -1,0 +1,32 @@
+.dashboard {
+  &__nav {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    &-active {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      background-image: linear-gradient(
+        to bottom,
+        $color-primary,
+        $color-primary-dark
+      );
+      color: $color-white;
+    }
+    &__item {
+      padding: 1rem;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+
+  &__page {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image: linear-gradient(
+      to bottom,
+      $color-primary-dark,
+      $color-primary
+    );
+    box-shadow: 0 1.5rem 2rem rgba($color: $color-primary-light, $alpha: 0.7);
+  }
+}

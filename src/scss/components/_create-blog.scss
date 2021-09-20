@@ -1,0 +1,43 @@
+.create-blog {
+  padding: 1.5rem;
+
+  &__form {
+    label {
+      color: $color-white;
+      margin: 0.5rem 0;
+    }
+    input {
+      background-color: $color-white;
+      border: rgba($color: $color-primary-dark, $alpha: 0.4) 1px solid;
+      border-radius: 3px;
+      padding: 1rem;
+      text-align: left;
+      height: 4rem;
+      width: 100%;
+    }
+  }
+
+  &__preview {
+    &-title {
+      margin: 2rem 0;
+      font-size: 3rem;
+      color: $color-white;
+      font-weight: 700;
+    }
+    &-submit {
+      border: rgba($color: $color-primary-dark, $alpha: 0.4) 1px solid;
+      border-radius: 3px;
+      background-color: $color-white;
+      padding: 1rem;
+      text-align: center;
+      height: 4rem;
+      width: 100%;
+      max-width: 300px;
+      color: $color-primary-dark;
+      transition: all 0.1s linear;
+      &:hover {
+        transform: translateY(-4px);
+      }
+    }
+  }
+}
