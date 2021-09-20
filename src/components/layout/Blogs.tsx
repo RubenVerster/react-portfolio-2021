@@ -11,7 +11,6 @@ const Posts = () => {
 
   const fetchBlogPosts = async () => {
     const querySnapshot = await getDocs(collection(db, 'posts'));
-    console.log(`firebase data`, querySnapshot.docs);
     setBlogPosts(querySnapshot.docs);
   };
 
