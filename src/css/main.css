@@ -357,6 +357,46 @@ a {
     .create-blog__preview-submit:hover {
       transform: translateY(-4px); }
 
+.edit-blog {
+  padding: 1.5rem;
+  border: solid 1px #fff;
+  border-radius: 3px;
+  margin: 4rem 0; }
+  .edit-blog__form label {
+    color: #fff;
+    margin: 0.5rem 0; }
+  .edit-blog__form input {
+    background-color: #fff;
+    border: rgba(27, 25, 155, 0.4) 1px solid;
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: left;
+    height: 4rem;
+    width: 100%; }
+  .edit-blog__preview-title {
+    margin: 2rem 0;
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700; }
+  .edit-blog__actions .button {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 1rem;
+    text-align: center;
+    height: 4rem;
+    width: 100%;
+    max-width: 300px;
+    color: #fff;
+    transition: all 0.1s linear; }
+    .edit-blog__actions .button:hover {
+      transform: translateY(-4px); }
+    .edit-blog__actions .button-update {
+      border: rgba(103, 162, 239, 0.4) 1px solid;
+      background-color: rgba(86, 67, 250, 0.3); }
+    .edit-blog__actions .button-delete {
+      border: rgba(143, 33, 33, 0.4) 1px solid;
+      background-color: rgba(209, 20, 20, 0.3); }
+
 .info-card {
   opacity: 0;
   transform: skewX(14deg);

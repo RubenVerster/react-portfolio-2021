@@ -1,39 +1,20 @@
 import { RingLoader } from 'react-spinners';
-import snarkdown from 'snarkdown';
+import BlogTemplate from './BlogTemplate';
 
 const EditBlogs = ({ blogPosts }: any) => {
-  const convertMDtoHTML = (post: string) => snarkdown(post);
-
   const renderBlogPosts = () => {
     if (blogPosts.length < 1)
       return (
-        <div className="my-12">
-          <RingLoader size={88} speedMultiplier={0.5} color="#8f2121" />
+        <div>
+          <RingLoader size={88} speedMultiplier={0.5} color="#1b199b" />
         </div>
       );
     //@ts-ignore
     return blogPosts.map((post) => {
-      return (
-        <div key={post.id} className="blog">
-          <h3 className="blog-title">
-            {post._document.data.value.mapValue.fields.title.stringValue}
-          </h3>
-          <h4 className="blog-subtitle">
-            {post._document.data.value.mapValue.fields.subtitle.stringValue}
-          </h4>
-          <p
-            className="blog-content"
-            dangerouslySetInnerHTML={{
-              __html: convertMDtoHTML(
-                post._document.data.value.mapValue.fields.content.stringValue
-              ),
-            }}
-          ></p>
-        </div>
-      );
+      return <BlogTemplate post={post} />;
     });
   };
-  return <div className="edit-blog">{renderBlogPosts()}</div>;
+  return <div className="px-6">{renderBlogPosts()}</div>;
 };
 
 export default EditBlogs;

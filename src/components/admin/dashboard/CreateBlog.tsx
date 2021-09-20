@@ -84,7 +84,9 @@ const CreateBlog = () => {
       </form>
       <div className="create-blog__preview">
         <h4 className="create-blog__preview-title">Blog Preview</h4>
-        <MDEditor.Markdown source={newContent} />
+        <div className="bg-white rounded-md p-3 mb-6">
+          <MDEditor.Markdown source={newContent} />
+        </div>
         <button
           className="create-blog__preview-submit"
           onClick={(e) => createBlog(e)}

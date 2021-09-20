@@ -42,7 +42,7 @@ const Dashboard = ({ setUserLoggedIn }: any) => {
       <div className="dashboard__nav container mx-auto flex flex-col md:flex-row bg-white text-center">
         <div
           className={`w-12/12 md:w-5/12 dashboard__nav__item ${
-            currentPage == 'blogs' && 'dashboard__nav-active'
+            currentPage === 'blogs' && 'dashboard__nav-active'
           }`}
           onClick={() => {
             setCurrentPage('blogs');
@@ -52,7 +52,7 @@ const Dashboard = ({ setUserLoggedIn }: any) => {
         </div>
         <div
           className={`w-12/12 md:w-5/12 dashboard__nav__item ${
-            currentPage == 'create' && 'dashboard__nav-active'
+            currentPage === 'create' && 'dashboard__nav-active'
           }`}
           onClick={() => {
             setCurrentPage('create');

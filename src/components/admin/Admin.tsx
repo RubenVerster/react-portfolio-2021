@@ -22,7 +22,9 @@ const Admin = () => {
   return (
     <div>
       {userLoggedIn ? (
-        <Dashboard setUserLoggedIn={setUserLoggedIn} />
+        <div className="container mx-auto mb-36 mt-12">
+          <Dashboard setUserLoggedIn={setUserLoggedIn} />
+        </div>
       ) : (
         <div className="container">
           <Login setUserLoggedIn={setUserLoggedIn} />
