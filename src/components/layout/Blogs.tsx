@@ -1,11 +1,11 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import db from '../../config/FireBaseConfig';
 import snarkdown from 'snarkdown';
 import { RingLoader } from 'react-spinners';
 
 const Posts = () => {
-  const [blogPosts, setBlogPosts] = React.useState<any>([]);
+  const [blogPosts, setBlogPosts] = useState<any>([]);
 
   const convertMDtoHTML = (post: string) => snarkdown(post);
 
@@ -45,7 +45,7 @@ const Posts = () => {
     });
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     fetchBlogPosts();
   }, []);
 
