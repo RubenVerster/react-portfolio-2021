@@ -1,28 +1,14 @@
 import Login from './Login';
-import { getAuth, signOut } from 'firebase/auth';
+import Dashboard from './dashboard/Dashboard';
 import { useState } from 'react';
 
-const auth = getAuth();
 const Admin = () => {
-  const [userLoggedIn, setUserLoggedIn] = useState<boolean>(false);
-
-  const logOut = () => {
-    signOut(auth)
-      .then(() => {
-        // Sign-out successful.
-        setUserLoggedIn(false);
-      })
-      .catch((error) => {
-        // An error happened.
-        alert(`error logging out! You're trapped forever!!!`);
-        console.error(error);
-      });
-  };
+  const [userLoggedIn, setUserLoggedIn] = useState<boolean>(true);
 
   return (
     <div className="">
       {userLoggedIn ? (
-        <button onClick={() => logOut()}>LOG OUT</button>
+        <Dashboard setUserLoggedIn={setUserLoggedIn} />
       ) : (
         <div className="container">
           <Login setUserLoggedIn={setUserLoggedIn} />

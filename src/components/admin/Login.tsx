@@ -1,7 +1,13 @@
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import {
+  getAuth,
+  setPersistence,
+  signInWithEmailAndPassword,
+  browserLocalPersistence,
+} from 'firebase/auth';
+
 import { useState } from 'react';
 import { FaUserNinja } from 'react-icons/fa';
-import { SiNintendo } from 'react-icons/si';
+
 const Login = ({ setUserLoggedIn }: any) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -11,18 +17,23 @@ const Login = ({ setUserLoggedIn }: any) => {
 
   const login = (e: any) => {
     e.preventDefault();
-    signInWithEmailAndPassword(auth, email, password)
+
+    const auth = getAuth();
+    setPersistence(auth, browserLocalPersistence)
       .then(() => {
-        setUserLoggedIn(true);
+        return signInWithEmailAndPassword(auth, email, password).then(() => {
+          setUserLoggedIn(true);
+        });
       })
       .catch((error) => {
         setSubmitError(true);
-        console.error(error);
+        const errorCode = error.code;
+        const errorMessage = error.message;
       });
   };
 
   return (
-    <div className="login flex flex-col items-center justify-evenly p-6">
+    <div className="login flex flex-col items-center justify-evenly p-12">
       <form
         className="login__form flex flex-col items-center"
         autoComplete="off"
@@ -30,7 +41,7 @@ const Login = ({ setUserLoggedIn }: any) => {
       >
         <FaUserNinja size={77} color="#1b199b" />
         {submitError && (
-          <p className="text-white text-xl">
+          <p className="text-white text-2xl mt-3">
             👀 Should I start tracking your IP? 🤔
           </p>
         )}
