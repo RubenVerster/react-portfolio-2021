@@ -1,3 +1,5 @@
+import { GiTechnoHeart } from 'react-icons/gi';
+
 const HomePage = () => {
   return (
     <header className="header">
@@ -19,7 +21,8 @@ const HomePage = () => {
           </div>
           <div className="messages__single">
             <p className="messages-single-text">
-              I fucking ♥ anything related to techology!
+              I fucking <GiTechnoHeart className="inline" /> anything related to
+              techology!
             </p>
           </div>
         </div>
