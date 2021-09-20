@@ -1,4 +1,11 @@
 import { Link } from 'react-router-dom';
+import {
+  FaBlog,
+  FaUsersCog,
+  FaCertificate,
+  FaTools,
+  FaHome,
+} from 'react-icons/fa';
 
 const Navigation = () => {
   const handleLinkClick = () => {
@@ -25,46 +32,51 @@ const Navigation = () => {
             <li className="navigation__item">
               <Link
                 onClick={() => handleLinkClick()}
-                className="navigation__link"
+                className="navigation__link mx-auto"
                 to="/"
               >
                 Home
+                <FaHome />
               </Link>
             </li>
             <li className="navigation__item">
               <Link
                 onClick={() => handleLinkClick()}
-                className="navigation__link"
+                className="navigation__link mx-auto"
                 to="/certification"
               >
                 Certificates
+                <FaCertificate />
               </Link>
             </li>
             <li className="navigation__item">
               <Link
                 onClick={() => handleLinkClick()}
-                className="navigation__link"
+                className="navigation__link mx-auto"
                 to="/projects"
               >
                 Projects
+                <FaTools />
               </Link>
             </li>
             <li className="navigation__item">
               <Link
                 onClick={() => handleLinkClick()}
-                className="navigation__link"
+                className="navigation__link mx-auto"
                 to="/blogs"
               >
                 Blog Posts
+                <FaBlog />
               </Link>
             </li>
             <li className="navigation__item">
               <Link
                 onClick={() => handleLinkClick()}
-                className="navigation__link"
+                className="navigation__link mx-auto"
                 to="/admin"
               >
                 Admin
+                <FaUsersCog />
               </Link>
             </li>
           </ul>

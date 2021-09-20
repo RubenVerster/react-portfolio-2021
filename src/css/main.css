@@ -194,7 +194,8 @@ a {
   margin: 1rem; }
 
 .navigation__link:link, .navigation__link:visited {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
@@ -204,7 +205,9 @@ a {
   text-transform: uppercase;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  align-items: center;
+  max-width: 333px; }
   .navigation__link:link span, .navigation__link:visited span {
     margin-right: 1.5rem;
     display: inline-block; }
