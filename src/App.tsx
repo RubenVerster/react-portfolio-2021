@@ -3,6 +3,7 @@ import Navigation from './components/layout/Navigation';
 import Certificates from './components/layout/Certificates';
 import Projects from './components/layout/Projects';
 import Blogs from './components/layout/Blogs';
+import Admin from './components/admin/Admin';
 import Warp from './components/layout/Warp';
 import Footer from './components/layout/Footer';
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/certification" component={Certificates} />
           <Route path="/projects" component={Projects} />
           <Route path="/blogs" component={Blogs} />
+          <Route path="/admin" component={Admin} />
         </Switch>
         <Footer />
       </div>

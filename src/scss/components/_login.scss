@@ -1,0 +1,77 @@
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-height: 50vh;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 422px;
+  border: rgba($color: $color-white, $alpha: 0.4) 1px solid;
+  border-radius: 2px;
+  background-color: transparent;
+  overflow: hidden;
+  z-index: -1;
+  &::before {
+    content: '';
+    height: 150%;
+    width: 150%;
+    position: absolute;
+    background: conic-gradient(
+      $color-primary-dark,
+      $color-secondary-dark,
+      $color-primary-dark,
+      $color-secondary-dark,
+      $color-primary-dark
+    );
+    left: -25%;
+    top: -25%;
+    animation: spin 1.5s infinite linear;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  &::after {
+    content: '';
+    background-color: #000;
+    position: absolute;
+    height: 95%;
+    width: 95%;
+    top: 2.5%;
+    left: 2.5%;
+  }
+
+  &__form {
+    z-index: 3;
+    width: 70%;
+    input {
+      background-color: transparent;
+      border: rgba($color: $color-secondary-dark, $alpha: 0.4) 1px solid;
+      border-radius: 3px;
+      padding: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+      height: 4rem;
+      width: 100%;
+    }
+
+    button {
+      border: rgba($color: $color-primary-dark, $alpha: 0.4) 1px solid;
+      border-radius: 3px;
+      padding: 1rem;
+      margin: 2rem 0;
+      text-align: center;
+      height: 4rem;
+      width: 100%;
+      color: $color-white;
+      transition: all 0.1s linear;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 1rem 2rem rgba($color: $color-primary-dark, $alpha: 0.4);
+      }
+    }
+  }
+}

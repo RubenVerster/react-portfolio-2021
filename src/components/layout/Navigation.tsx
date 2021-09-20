@@ -62,9 +62,9 @@ const Navigation = () => {
               <Link
                 onClick={() => handleLinkClick()}
                 className="navigation__link"
-                to="/"
+                to="/admin"
               >
-                Home
+                Admin
               </Link>
             </li>
           </ul>
