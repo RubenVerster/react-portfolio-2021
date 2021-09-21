@@ -1,4 +1,4 @@
-import { FaGithubAlt, FaYoutube } from 'react-icons/fa';
+import { FaGithubAlt, FaYoutube, FaChess, FaEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,22 +8,39 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://https://github.com/RubenVerster/"
-            className="footer__content__social-icon"
+            href="https://www.youtube.com/channel/UCZjyZSG5C9EwyC_llEE0GCw"
+            className="footer__content__social-icon youtube "
           >
-            <FaGithubAlt />
+            <FaYoutube />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://www.youtube.com/channel/UCZjyZSG5C9EwyC_llEE0GCw"
-            className="footer__content__social-icon"
+            href="https://chess.com/play/RubenVerster314"
+            className="footer__content__social-icon chess "
+            aria-label="hidden"
           >
-            <FaYoutube />
+            <FaChess />
+          </a>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://https://github.com/RubenVerster/"
+            className="footer__content__social-icon github "
+          >
+            <FaGithubAlt />
           </a>
         </div>
-        <div className="footer__content__copyright">
-          &copy; Ruben Verster 2021
+        <div className="footer__content__copyright flex">
+          <p>&copy; Ruben Verster 2021</p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="mailto:info@rubenverster.com"
+            className="footer__content__social-icon github "
+          >
+            <FaEnvelope />
+          </a>
         </div>
       </div>
     </footer>

@@ -107,6 +107,12 @@ a {
 
 .footer {
   width: 100%; }
+  .footer__content__social .youtube:hover {
+    color: #b91c1c; }
+  .footer__content__social .chess:hover {
+    color: #047857; }
+  .footer__content__social .github:hover {
+    color: #1d4ed8; }
   .footer__content__social-icon:link, .footer__content__social-icon:visited {
     margin: 0 1.5rem;
     color: #fff;
