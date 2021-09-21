@@ -21,8 +21,7 @@ const HomePage = () => {
           </div>
           <div className="messages__single">
             <p className="messages-single-text">
-              I fucking <GiTechnoHeart className="inline" /> anything related to
-              techology!
+              Ich <GiTechnoHeart className="inline" /> alles von der Technik!
             </p>
           </div>
         </div>
