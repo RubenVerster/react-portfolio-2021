@@ -31,7 +31,7 @@ const Footer = () => {
             <FaGithubAlt />
           </a>
         </div>
-        <div className="footer__content__copyright flex">
+        <div className="footer__content__copyright flex items-center">
           <p>&copy; Ruben Verster 2021</p>
           <a
             rel="noreferrer"
