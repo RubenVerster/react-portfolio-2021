@@ -34,7 +34,6 @@ const Footer = () => {
         <div className="footer__content__copyright flex">
           <p>&copy; Ruben Verster 2021</p>
           <a
-            target="_blank"
             rel="noreferrer"
             href="mailto:info@rubenverster.com"
             className="footer__content__social-icon github "
