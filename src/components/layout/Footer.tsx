@@ -35,7 +35,7 @@ const Footer = () => {
           <p>&copy; Ruben Verster 2021</p>
           <a
             rel="noreferrer"
-            href="mailto:info@rubenverster.com"
+            href="mailto:rrverster31415@gmail.com"
             className="footer__content__social-icon github "
           >
             <FaEnvelope />
