@@ -19,12 +19,12 @@ const HomePage = () => {
               Self-Taught through YouTube and Udemy
             </p>
           </div>
-          {/* <div className="messages__single">
+          <div className="messages__single">
             <p className="messages-single-text">
               I fucking <GiTechnoHeart className="inline" /> anything related to
               techology!
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </header>
