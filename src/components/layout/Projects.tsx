@@ -90,7 +90,7 @@ const Projects = () => {
               <p>{project.description}</p>
             </div>
           </div>
-          <div className="project-card__tech flex justify-center">
+          <div className="project-card__tech flex flex-wrap justify-center">
             {project.tech.map((style) => style)}
           </div>
           <div className="project-card__side project-card__side--back">
