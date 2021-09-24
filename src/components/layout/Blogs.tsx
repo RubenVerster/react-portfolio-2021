@@ -32,7 +32,7 @@ const Posts = () => {
             {post._document.data.value.mapValue.fields.subtitle.stringValue}
           </h4>
           <p
-            className="blog-content"
+            className="blog-content bg-white p-6 rounded-md"
             dangerouslySetInnerHTML={{
               __html: convertMDtoHTML(
                 post._document.data.value.mapValue.fields.content.stringValue
