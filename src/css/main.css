@@ -291,12 +291,12 @@ a {
   z-index: -1; }
   .login::before {
     content: '';
-    height: 150%;
-    width: 150%;
+    height: 300%;
+    width: 300%;
     position: absolute;
     background: conic-gradient(#1b199b, #8f2121, #1b199b, #8f2121, #1b199b);
-    left: -25%;
-    top: -25%;
+    left: -100%;
+    top: -100%;
     animation: spin 1.5s infinite linear; }
 
 @keyframes spin {

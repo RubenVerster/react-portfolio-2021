@@ -13,8 +13,8 @@
   z-index: -1;
   &::before {
     content: '';
-    height: 150%;
-    width: 150%;
+    height: 300%;
+    width: 300%;
     position: absolute;
     background: conic-gradient(
       $color-primary-dark,
@@ -23,8 +23,8 @@
       $color-secondary-dark,
       $color-primary-dark
     );
-    left: -25%;
-    top: -25%;
+    left: -100%;
+    top: -100%;
     animation: spin 1.5s infinite linear;
   }
 
