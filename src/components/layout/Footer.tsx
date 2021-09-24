@@ -25,7 +25,7 @@ const Footer = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://https://github.com/RubenVerster/"
+            href="https://github.com/RubenVerster"
             className="footer__content__social-icon github "
           >
             <FaGithubAlt />
